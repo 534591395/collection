@@ -1,0 +1,20 @@
+<h1 collect="h1test">{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<div>lalala<a href="###"  title="提交啦" id="submit" collect="pay">click</a></div>
+
+<script>
+  (function() {
+    var collect = document.createElement('script');
+    collect.type = 'text/javascript';
+    collect.async = true;
+    collect.src = ('https:' == document.location.protocol ? 'https://' : 'http://127.0.0.1:3000') + '/javascripts/collect.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(collect, s);
+  })();
+  
+</script>
+
+<script>
+   
+</script>
+
