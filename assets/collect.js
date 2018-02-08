@@ -41,7 +41,6 @@
        	var additionalArgs = Array.prototype.slice.call(arguments,3);
        	if(loopable) {	
        	  if(loopable.length === +loopable.length) {
-       	  	var i;
        	  	for(var i=0; i<loopable.length; i++) {
        	  	  callback.apply(self, [loopable[i],i].concat(additionalArgs));
        	  	}
