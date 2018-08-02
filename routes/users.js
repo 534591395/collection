@@ -13,12 +13,12 @@ function getCookie(cookie,name) {
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  fs.writeFile('../Log.text', JSON.stringify(req.query)+'\n',{flag:'a'} ,function(err) {
+  fs.writeFile('./Log.text', JSON.stringify(req.query)+'\n',{flag:'a'} ,function(err) {
   	if(err) console.log(err);
   });
   //res.send('respond with a resource');
   //res.render('index', { title: 'Express' });
-	fs.readFile("../public/images/loading.gif", "binary", function(error, file) {
+	fs.readFile("./public/images/loading.gif", "binary", function(error, file) {
 		if(error) {
 			res.writeHead(500,{"Content-Type":"text/plain"});
 			res.write(error +"\n");
